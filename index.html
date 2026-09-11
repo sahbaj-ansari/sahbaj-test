@@ -8,12 +8,21 @@
     body {
       font-family: Arial, sans-serif;
       display: flex;
+      flex-direction: column; /* Stacks the heading and button vertically */
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
       background-color: #f4f4f9;
+      gap: 20px; /* Adds space between the heading and the button */
     }
+    
+    h1 {
+      color: #333333;
+      margin: 0;
+      font-size: 28px;
+    }
+
     .info-btn {
       padding: 12px 24px;
       font-size: 16px;
@@ -25,16 +34,15 @@
       text-decoration: none;
       transition: background-color 0.2s ease;
     }
+    
     .info-btn:hover {
       background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-<h1 style = "color :red;">
-  Tap The Bellow Buttun And See Information Of Sahbaj Ansari
-</h1>
-  <br>
+
+  <h1>Welcome to Sahbaj's Profile</h1>
   <a href="sah.html" class="info-btn">Show Information of Sahbaj</a>
 
 </body>
